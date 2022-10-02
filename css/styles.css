@@ -80,15 +80,15 @@ body{
 
 .icono {
     font-size: 200px;
-    float:left;
 }
 
 .row{
     width: 100%;
-    float: left;
     text-align: center;
     align-items: flex-end;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .column-1{
@@ -99,7 +99,6 @@ body{
 
 .column-2{
     width: 50%;
-    float: left;
     text-align: center;
 }
 
@@ -252,7 +251,10 @@ body{
     }
     .icono{
         font-size: 50px;
-        float: left;
+    }
+
+    #responsive {
+        order: 1;
     }
     /* column-2 pasará de tener 50% a 100% */
     .column-2{
@@ -265,6 +267,11 @@ body{
     /* column-4 pasará de tener 25% a 50% */
     .column-5{
         width: 100%;
+        order: 2;
+    }
+
+    .column-5:nth-child(3){
+        order: 1;
     }
 
     .whatsappLink.desktop {
